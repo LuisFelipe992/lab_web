@@ -27,8 +27,8 @@
         <h1 id="titulo_topo"><?php echo $r['nome'];  ?></h1>
         <p id="msg_topo"></p>
         <ul>
-            <a href="cadastrar.html"><li>PRONTUÁRIO</li></a>
-            <a href="agendamento.html"><li>AGENDAMENTOS</li></a>
+            <a href="meusAgendamentos.php?id=<?php echo$id?>"><li>MEUS AGENDAMENTOS</li></a>
+            <a href="agendamento.php?id=<?php echo $id?>"><li>AGENDAMENTOS</li></a>
             <a href="procedimentos.html"><li>VALORES E PROCEDIMENTOS</li></a>
             <a href="feedback.html"><li>FEEDBACK</li></a>
         </ul>

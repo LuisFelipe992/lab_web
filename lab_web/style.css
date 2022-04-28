@@ -80,6 +80,7 @@ img{
 
 /******************************TABELA*******************************************/
 .tabela{
+    
     border-collapse: collapse;
     border-color: var(--tema);
     width: 100%;
@@ -106,6 +107,7 @@ tr:hover{
     background-color: var(--tema_fundo);
     padding: 20px;
     font-size: 1.3em;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.493);
 }
 .input_dados{
     width: 100%;
@@ -127,4 +129,7 @@ tr:hover{
 }
 .ajusta_submit{
     text-align: center;
+}
+input[type=range]{
+
 }

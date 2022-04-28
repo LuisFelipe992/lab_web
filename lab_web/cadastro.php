@@ -1,6 +1,8 @@
 
 
 <?php
+require_once'conecte.php';
+
 ###########criacao do banco de dados############
 $CONECTAR = mysqli_connect('localhost','root','','logins');
 $email;
@@ -14,9 +16,9 @@ $teste = false;
         mysqli_query($con,$create);
     }
 
-##########criacao da tabela################
+##########criacao da tabela cadastro################
     function conecta(){
-        $con = mysqli_connect('localhost','root','','logins');
+        global $con;
         $sql = "create table if not exists  users(
             id INT AUTO_INCREMENT,
             nome VARCHAR(200),
@@ -33,7 +35,7 @@ $teste = false;
         global $nome;
         global $senha;
         global $teste;
-        $con = mysqli_connect('localhost','root','','logins');
+        global $con;
         $sql = "select * from users";
         $query = mysqli_query($con,$sql);
 
@@ -51,11 +53,12 @@ $teste = false;
         global $email;
         global $nome;
         global $senha;
+        global $con;
         if($v == false){
             
             if($email != '' && $senha != ''){
                 $sql = "insert into users values('0','$nome','$email','$senha')";
-                $con = mysqli_connect('localhost','root','','logins');
+                
                 mysqli_query($con,$sql);
                 echo 'ok';
             }
