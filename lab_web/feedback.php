@@ -20,14 +20,21 @@
         <textarea maxlength="200" rows="10" cols="30" autofocus placeholder="digite aqui" style="resize: none;"></textarea><br>
       </div>
       <br>
-      <input type="submit" id="submit" class="input_submit" value="ENVIAR" >
-    </form>
+      <input type="submit" id="submit" class="input_submit" value="ENVIAR" >   
+      <input type="button" id="voltar" class="input_submit" value="VOLTAR" >
+
   </div>
 
     <script>
         var emoge = new Array('&#128529;','&#128528','&#128515','&#128516','&#128525	');
         var area = document.querySelector('h1');
         var barra = document.querySelector('input');
+        var btnVoltar = document.getElementById('voltar');
+
+      btnVoltar.addEventListener('click',()=>{
+        window.history.back()
+      });
+
         console.log(barra)
         function loop(){
             requestAnimationFrame(loop);

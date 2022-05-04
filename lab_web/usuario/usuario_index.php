@@ -29,7 +29,7 @@
         <ul>
             <a href="meusAgendamentos.php?id=<?php echo$id?>"><li>MEUS AGENDAMENTOS</li></a>
             <a href="agendamento.php?id=<?php echo $id?>"><li>AGENDAMENTOS</li></a>
-            <a href="procedimentos.html"><li>VALORES E PROCEDIMENTOS</li></a>
+            <a href="prontuario.php"><li>VALORES A PAGAR</li></a>
             <a href="feedback.html"><li>FEEDBACK</li></a>
         </ul>
     </header>

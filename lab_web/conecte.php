@@ -1,3 +1,3 @@
 <?php
-    $con = mysqli_connect('localhost','root','','logins');
+    $con = mysqli_connect('localhost','aluno','aluno','logins');
 ?>

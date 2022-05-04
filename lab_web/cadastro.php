@@ -3,6 +3,8 @@
 <?php
 require_once'conecte.php';
 
+
+
 ###########criacao do banco de dados############
 $CONECTAR = mysqli_connect('localhost','root','','logins');
 $email;
@@ -11,7 +13,7 @@ $email = $_POST['email'];
 $senha = $_POST['senha'];
 $teste = false;
     function cria(){
-        $con = mysqli_connect('localhost','root','');
+        $con = mysqli_connect('localhost','aluno','aluno');
         $create = "create database if not exists logins";
         mysqli_query($con,$create);
     }
